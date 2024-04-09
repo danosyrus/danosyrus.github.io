@@ -1,14 +1,15 @@
 @import"https://use.typekit.net/rcr1opg.css";
 @import"https://www.w3schools.com/w3css/4/w3.css";
 @import"https://www.w3schools.com/w3css/4/w3pro.css";
+@import"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
 :root {
-	--white-color: white;
-	--green-color: #57F287;
-	--blue-color: #5865F2;
-	--red-color: #ED4245;
-	--accent-color: #37cdbe;
-	--neutral-color: #3d4451;
+	--white: white;
+	--green: #57F287;
+	--blue: #5865F2;
+	--red: #ED4245;
+	--accent: #37cdbe;
+	--neutral: #3d4451;
 	--base-100: #0F1117;
 	--base-200: #2A2E35;
 	--font-primary: "sofia-pro", sans-serif;
@@ -17,15 +18,43 @@
 
 .gradient-text {
 	background-image: linear-gradient(to top, var(--tw-gradient-stops));
-	--tw-gradient-from: var(--blue-color);
+	--tw-gradient-from: var(--blue);
 	--tw-gradient-to: rgb(249 115 22 / 0);
 	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-	--tw-gradient-to: var(--white-color);
+	--tw-gradient-to: var(--white);
 	background-clip: text;
 	color: #0000;
 	-webkit-background-clip: text
 }
 
-.bold-text {
-	font-weight: bolder;
+#netural{
+	color: #3d4451;
+}
+
+#accent{
+	color: #37cdbe;
+}
+
+#font-primary{
+	font-family: var(--font-primary);
+}
+
+#font-secondary{
+	font-family: var(--font-secondary);
+}
+
+#blue{
+	color: var(--blue);
+}
+
+#red{
+	color: var(--red);
+}
+
+#green{
+	color: var(--green);
+}
+
+#white{
+	color: var(--white);
 }
