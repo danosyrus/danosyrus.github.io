@@ -5,47 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
-  <link rel="stylesheet" href="./src/styles/main.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.typekit.net/rcr1opg.css">
-  <link href="src/assets/favicon.png" rel="icon">
   <link rel="icon" type="image/png" href="https://github.com/danosyrus.png">
+  <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 
-<body style="background-color: var(--base-100); font-family: var(--font-primary); color: white;">
+<body>
   <div class="w3-bar w3-mobile w3-margin">
     <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Home</a>
     <a href="about.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">About</a>
     <a href="contact.html"
       class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Contact</a>
     <a class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-right w3-margin-right"><i
-        class="fa fa-gear fa-spin" style="font-size:24px"></i></a>
+        class="fa fa-gear fa-spin w3-xlarge"></i></a>
   </div>
 
-  <div class="w3-container w3-content w3-center" style="max-width: 800px;">
-    <div class="w3-container w3-large">
-      <div class="w3-row">
-        <div class="w3-col m12">
-          <img src="https://github.com/danosyrus.png" class="w3-image w3-round-large" alt="Profile Picture"
-            style="width:33%">
-        </div>
-      </div>
-      <div class="w3-row">
-        <div class="w3-col m12 w3-center">
-          <b>Dano Syrus</b>
-          <h5 class="w3-opacity">Full stack developer &amp; Desginer</h5>
-          <p>Hello, I am <a class="w3-text-blue">Dano Syrus</a> a full stack developer from India. I completed my higher
-            secondary in Commerce with Computer on 2023. My strong intrest towards programming and designing made me
-            think of being a Full Stack Developer. Currently I'm doing Python full stack development course and Mixed
-            Martial Arts. Not to mention that I'm a great fan of Mixed Martial Arts and I'm mastering wide variety of
-            them...<a class="w3-text-blue">read more</a></p>
+  <div class="w3-mobile">
+    <div class="w3-center " style="margin: 12% 10% 10% 10%">
+      <h2 class="w3-opacity">Full stack developer &amp; Desginer</h2>
+      <p class="w3-xlarge w3-justify">Hello, I am <a class="w3-text-blue">Dano Syrus</a> a full stack developer from
+        India. I graduated from high
+        school focus on Commerce with Computer Science in 2023. My strong intrest towards programming and designing made
+        me
+        think of being a Full Stack Developer & Designer. Currently, I'm enrolled in a Python full-stack development
+        course while
+        also practicing Mixed Martial Arts. It's worth noting that I'm a huge fan of Mixed Martial Arts and am dedicated
+        to mastering a wide variety of them...<a onclick="document.getElementById('modal').style.display='block'"
+          class="w3-button w3-hover-none w3-large w3-text-blue">read more</a></p>
+      <div id="modal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity">
+          <div class="w3-container w3-rounded">
+            <span onclick="document.getElementById('modal').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+            <div>
+              <p>Coming Soon...</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="src/scripts/script.js"></script>
+  <script src="src/scripts/about.js"></script>
 </body>
 
 </html>
