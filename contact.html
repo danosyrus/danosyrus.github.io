@@ -6,58 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" href="./src/styles/main.css">
-  <link rel="icon" type="image/png" href="https://github.com/danosyrus.png">
+  <link rel="shortcut icon" type="image/png" href="./src/assets/favicon.jpg">
 </head>
 
 <body>
-  <div class="w3-bar w3-mobile w3-margin">
+  <nav class="w3-bar w3-margin">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-none ">
+      <img src="./src/assets/favicon2.jpg" style="height:35px;width:35px">
+    </a>
     <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Home</a>
     <a href="about.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">About</a>
     <a href="contact.html"
       class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Contact</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-right w3-margin-right"><i
-        class="fa fa-gear fa-spin w3-xlarge"></i></a>
-  </div>
-  <div class="w3-content w3-center" style="max-width: 600px; margin: auto;">
-    <div class="w3-container">
-      <h2>Social Links</h2>
-      <div class="w3-row-padding w3-margin-bottom">
-        <div class="w3-quarter">
-          <a href="https://www.instagram.com/danosyrus" target="_blank"
-            class="w3-button w3-block w3-hover-white w3-hover-text-blue w3-border w3-border-black w3-round-large w3-padding-16 w3-margin-bottom"><i
-              class="fa fa-instagram"></i> Instagram</a>
-        </div>
-        <div class="w3-quarter">
-          <a href="https://t.me/danosyrus" target="_blank"
-            class="w3-button w3-block w3-hover-white w3-hover-text-blue w3-border w3-border-black w3-round-large w3-padding-16 w3-margin-bottom"><i
-              class="fa fa-telegram"></i> Telegram</a>
-        </div>
-        <div class="w3-quarter">
-          <a href="mailto:danosyrus@tuta.io"
-            class="w3-button w3-block w3-hover-white w3-hover-text-blue w3-border w3-border-black w3-round-large w3-padding-16 w3-margin-bottom"><i
-              class="fa fa-envelope"></i> Email</a>
-        </div>
-        <div class="w3-quarter">
-          <a href="https://github.com/danosyrus" target="_blank"
-            class="w3-button w3-block w3-hover-white w3-hover-text-blue w3-border w3-border-black w3-round-large w3-padding-16 w3-margin-bottom"><i
-              class="fa fa-github"></i> GitHub</a>
-        </div>
-      </div>
+  </nav>
 
-      <div class="w3-container w3-padding">
-        <h2>Contact Form</h2>
-        <form class="w3-container">
-          <input class="w3-input w3-margin-bottom w3-round-large" type="text" placeholder="Name" required>
-          <input class="w3-input w3-margin-bottom w3-round-large" type="email" placeholder="Email" required>
-          <textarea class="w3-input w3-margin-bottom w3-round-large" rows="4" placeholder="Message" required></textarea>
+  <main>
+    <section class="w3-container w3-content w3-padding-large w3-round-large w3-round">
+      <h2>Contact Me</h2>
+      <form method="post" class="w3-container">
+        <p>
+          <input class="w3-input w3-border-0 w3-round" type="text" name="name" placeholder="Name" required>
+        </p>
+        <p>
+          <input class="w3-input w3-border-0 w3-round" type="email" name="email" placeholder="Email" required>
+        </p>
+        <p>
+          <textarea class="w3-input w3-border-0 w3-round" name="message" rows="5" placeholder="Message"
+            required></textarea>
+        </p>
+        <button type="submit" class="w3-button w3-blue w3-margin-top w3-round-large">Submit</button>
+      </form>
+    </section>
 
-          <button
-            class="w3-button w3-hover-white w3-hover-text-blue w3-border w3-border-black w3-round-large w3-margin-bottom w3-left"
-            type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </div>
+
+    <section class="w3-container w3-content w3-margin-top w3-center">
+      <h2>Socials</h2>
+      <a href="https://www.instagram.com/danosyrus/" target="_blank"
+        class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-instagram"></a>
+      <a href="https://t.me/danosyrus/" target="_blank"
+        class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-telegram"></a>
+      <a href="https://www.github.com/danosyrus/" target="_blank"
+        class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-github"></a>
+      <a href="mailto:danosyrus@tuta.io" target="_blank"
+        class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-envelope"></a>
+    </section>
+  </main>
+
 </body>
 
 </html>
