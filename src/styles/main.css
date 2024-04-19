@@ -1,3 +1,7 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+@import"https://use.typekit.net/rcr1opg.css";
+
 :root {
 	--white: white;
 	--green: #57F287;
@@ -5,8 +9,21 @@
 	--red: #ED4245;
 	--accent: #37cdbe;
 	--neutral: #3d4451;
-	--base-100: #0F1117;
-	--base-200: #2A2E35;
 	--font-primary: "sofia-pro", sans-serif;
 	--font-secondary: "cubano", sans-serif;
+}
+
+body, h1,h2,h3,h4,h5,h6, p{
+	font-family: "sofia-pro", sans-serif;
+	color:white;
+}
+
+.animation {
+    font-weight: bold;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.show {
+    opacity: 1;
 }
