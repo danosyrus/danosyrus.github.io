@@ -5,47 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
-  <link rel="icon" type="image/png" href="https://github.com/danosyrus.png">
+  <link rel="shortcut icon" type="image/png" href="./src/assets/favicon.jpg">
   <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 
 <body>
-  <div class="w3-bar w3-mobile w3-margin">
+  <nav class="w3-bar w3-margin">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-none ">
+      <img src="./src/assets/favicon2.jpg" style="height:35px;width:35px">
+    </a>
     <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Home</a>
     <a href="about.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">About</a>
     <a href="contact.html"
       class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Contact</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-right w3-margin-right"><i
-        class="fa fa-gear fa-spin w3-xlarge"></i></a>
-  </div>
+  </nav>
 
-  <div class="w3-mobile">
-    <div class="w3-center " style="margin: 12% 10% 10% 10%">
-      <h2 class="w3-opacity">Full stack developer &amp; Desginer</h2>
-      <p class="w3-xlarge w3-justify">Hello, I am <a class="w3-text-blue">Dano Syrus</a> a full stack developer from
-        India. I graduated from high
-        school focus on Commerce with Computer Science in 2023. My strong intrest towards programming and designing made
-        me
-        think of being a Full Stack Developer & Designer. Currently, I'm enrolled in a Python full-stack development
-        course while
-        also practicing Mixed Martial Arts. It's worth noting that I'm a huge fan of Mixed Martial Arts and am dedicated
-        to mastering a wide variety of them...<a onclick="document.getElementById('modal').style.display='block'"
-          class="w3-button w3-hover-none w3-large w3-text-blue">read more</a></p>
-      <div id="modal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-opacity">
-          <div class="w3-container w3-rounded">
-            <span onclick="document.getElementById('modal').style.display='none'"
-              class="w3-button w3-display-topright">&times;</span>
-            <div>
-              <p>Coming Soon...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <main class="w3-container w3-content w3-mobile">
+    <article class="w3-center" style="margin: 10%;margin-top: 8%;">
+      <h2 class="w3-opacity">Full Stack Developer &amp; Designer</h2>
+      <p class="w3-xlarge w3-justify">
+        Hello, I am <a class="w3-text-blue">Dano Syrus</a>, a full-stack developer from India. I graduated from high
+        school with a focus on Commerce with Computer Science in 2023. My strong interest in programming and designing
+        led me to pursue a career as a Full Stack Developer & Designer. Currently, I'm enrolled in a Python full-stack
+        development course while also practicing Mixed Martial Arts. It's worth noting that I'm a huge fan of Mixed
+        Martial Arts and am dedicated to mastering a wide variety of them.
 
-  <script src="src/scripts/about.js"></script>
+      </p>
+      <button onclick="document.getElementById('modal').style.display='block'"
+        class="w3-button w3-blue w3-margin-top w3-round-large w3-left" disabled>Read More</button>
+    </article>
+  </main>
+
+  <script src="src/scripts/about.js" defer></script>
 </body>
 
 </html>
