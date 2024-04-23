@@ -1,22 +1,18 @@
-var texts = [
+const texts = [
   "Full Stack Developer",
   "Web Designer",
   "Programmer",
   "Tech Enthusiast"
 ];
 
-var index = 0;
+let index = 0;
+const textElement = document.getElementById("bio");
+
 function changeText() {
-  var textElement = document.getElementById("bio");
   textElement.classList.remove("show");
-
-  setTimeout(function () {
+  setTimeout(() => {
     textElement.textContent = texts[index];
-    index++;
-    if (index >= texts.length) {
-      index = 0;
-    }
-
+    index = (index + 1) % texts.length;
     textElement.classList.add("show");
   }, 500);
 }
@@ -25,13 +21,12 @@ changeText();
 setInterval(changeText, 3000);
 
 fetch("src/config/config.json")
-  .then((res) => {
-    return res.json();
-  })
+  .then(res => res.json())
   .then(data => {
-    const entries = Object.entries(data);
-    for (let [key] of entries) {
-      var res = document.getElementById(key);
-      res ? res.href = data[key] : null;
+    for (const key in data) {
+      const element = document.getElementById(key);
+      if (element) {
+        element.href = data[key];
+      }
     }
   });
