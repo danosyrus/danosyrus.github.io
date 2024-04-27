@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact page for Dano Syrus">
-  <meta name="keywords" content="contact, Dano Syrus, socials, email">
-  <meta name="author" content="Dano Syrus">
-  <title>Contact</title>
-  <link rel="stylesheet" href="src/styles/main.css">
-  <link rel="shortcut icon" type="image/png" href="src/assets/favicon.jpg">
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    
+    <meta name="description" content="Welcome to Dano Syrus's personal website, where you can find more about me.">
+    <meta name="keywords" content="Dano Syrus, tech enthusiast, website, technology">
+    <meta name="author" content="Dano Syrus">
 
+    <meta property="og:title" content="Dano Syrus Personal Website">
+    <meta property="og:description" content="Welcome to Dano Syrus's personal website, where you can find more about me.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/danosyrus">
+    <meta property="og:url" content="https://danosyrus.is-a.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dano Syrus">
+    
+    <title>Dano Syrus | Contact</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="icon" type="image/png" href="src/assets/favicon.jpg">
+</head>
 <body>
   <nav class="w3-bar w3-margin">
-    <a href="index" class="w3-bar-item w3-button w3-hover-none">
-      <img src="src/assets/favicon2.jpg" style="height:35px;width:35px">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-none">
+      <img src="src/assets/favicon2.jpg" style="height:35px;width:35px" alt="Logo">
     </a>
-    <a href="index" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Home</a>
-    <a href="about" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">About</a>
-    <a href="contact" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Contact</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">About</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Contact</a>
   </nav>
 
   <main class="w3-container w3-content w3-padding-large">
     <section class="w3-container w3-content w3-padding-large w3-round-large">
       <h2 class="w3-center">Contact Me</h2>
-      <form method="post" class="w3-container">
+      <form action="#" method="post" class="w3-container">
         <p>
           <input class="w3-input w3-border w3-round w3-transparent" type="text" name="name" placeholder="Name" required>
         </p>
@@ -35,19 +44,18 @@
         <p>
           <textarea class="w3-input w3-border w3-round w3-transparent" name="message" rows="5" placeholder="Message" required></textarea>
         </p>
-        <button type="submit" class="w3-button w3-white w3-border w3-border-blue w3-round-large w3-hover-none w3-margin-top">Submit</button>
+        <button type="submit" class="w3-button w3-white w3-border w3-border-blue w3-hover-black w3-round-large w3-margin-top">Submit</button>
       </form>
     </section>
 
     <section class="w3-container w3-content w3-margin-top w3-center">
       <h2>Socials</h2>
-      <a id="instagram" target="_blank" class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-instagram"></a>
-      <a id="telegram" target="_blank" class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-telegram"></a>
-      <a id="github" target="_blank" class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-github"></a>
-      <a id="mail" target="_blank" class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-envelope"></a>
+      <a id="instagram" href="#" target="_blank" class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-instagram"></a>
+      <a id="telegram" href="#" target="_blank" class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-telegram"></a>
+      <a id="github" href="#" target="_blank" class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-github"></a>
+      <a id="mail" href="#" target="_blank" class="w3-button w3-round w3-hover-none w3-hover-text-blue w3-xlarge fa fa-envelope"></a>
     </section>
   </main>
   <script src="src/scripts/contact.js" defer></script>
 </body>
-
 </html>
