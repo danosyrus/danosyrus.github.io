@@ -30,3 +30,7 @@ fetch("src/config/config.json")
       }
     }
   });
+
+window.onload = function () {
+  document.body.classList.add("loaded");
+};
