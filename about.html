@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-
   <meta name="description" content="Welcome to Dano Syrus's personal website, where you can find more about me.">
   <meta name="keywords" content="Dano Syrus, tech enthusiast, website, technology">
   <meta name="author" content="Dano Syrus">
@@ -21,40 +20,79 @@
   <title>Dano Syrus | About</title>
   <link rel="stylesheet" href="src/styles/main.css">
   <link rel="icon" type="image/png" href="src/assets/favicon.jpg">
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 </head>
 
 <body class="preload">
-  <nav class="w3-bar w3-margin">
-    <a href="index" class="w3-bar-item w3-button w3-hover-none">
-      <img src="src/assets/favicon2.jpg" style="height:35px;width:35px" alt="Logo">
-    </a>
-    <a href="index" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Home</a>
-    <a href="about" class="w3-bar-item w3-button w3-hover-none w3-text-blue w3-hover-text-blue w3-large">About</a>
-    <a href="contact"
-      class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-blue w3-large">Contact</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index">
+        <img src="src/assets/favicon2.jpg" style="height:35px;width:35px" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main class="w3-container w3-content w3-mobile">
-    <article class="w3-center" style="margin: 10%;margin-top: 6%;">
-      <h2 class="w3-opacity">Full Stack Developer & Designer</h2>
-      <hr class="w3-opacity">
-      <p class="w3-large w3-justify">
-        Hello, I am Dano Syrus, a full-stack freelance developer based in India. I graduated from high school with a
-        focus on Commerce with Computer Science in 2023. It's been about 3 to 4 years since I delved into programming
-        and the tech industry. I began my journey by developing and creating Discord bots, and since then, my
-        exploration and
-        learning have continued. I've had experience with a variety of tools and programming languages. Since I began
-        learning programming, I've started working on projects, all of which you can find on my <a id="github" href="#"
-          class="w3-text-blue" target="_blank" style="text-decoration: none;">github</a>
-        profile.<br><br>My strong interest in programming and designing led me to
-        pursue a career as a Full Stack Developer & Designer. Currently, I'm enrolled in a Python full-stack development
-        course while also mastering Mixed Martial Arts.<br><br>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="src/assets/cover2.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="450"
+          height="150" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Full Stack Developer & Designer</h1>
+        <p class="lead">Hello, I am Dano Syrus, a full-stack freelance developer based in India.I graduated from high
+          school with a focus on Commerce with Computer Science in 2023. It's been about 3 to 4 years since I delved
+          into programming and the tech industry. began my journey by developing and creating Discord bots, and since
+          then, my exploration and learning have continued...</p>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#moreaboutme">
+          <div class="accordion-body lead">
+            <p>I've had experience with a variety
+              of tools and programming languages. Since I began learning programming, I've started working on
+              projects, all of which you can find on my GitHub profile. My strong interest in programming and
+              designing led me to pursue a career as a Full Stack Developer & Designer.</p>
+            <p>Currently, I'm enrolled in
+              a Python full-stack development course while also mastering Mixed Martial Arts. It's worth noting
+              that I'm a huge fan of Mixed Martial Arts and am dedicated to mastering a wide variety of them. I
+              strongly believe in doing my best and always aiming for excellence in everything I do. I'm eager to
+              receive your messages! Feel free to reach out to me through my socials.</p>
+          </div>
+        </div>
+        <div class="accordion" id="moreaboutme">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <div class="d-grid gap-2">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  Read More
+                </button>
+              </div>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        It's worth noting that I'm a huge fan of Mixed Martial Arts and am dedicated to mastering a wide variety of
-        them. I strongly believe in doing my best and always aiming for excellence in everything I do. I'm eager to
-        receive your messages! Feel free to reach out to me through my socials.</p>
-    </article>
-  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="src/scripts/about.js" defer></script>
 </body>
 
