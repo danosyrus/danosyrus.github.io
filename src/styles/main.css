@@ -11,6 +11,7 @@
 	--neutral: #3d4451;
 	--font-primary: "sofia-pro", sans-serif;
 	--font-secondary: "cubano", sans-serif;
+	--font-third: "Pacifico", cursive;
 }
 
 body,
@@ -46,13 +47,13 @@ p {
 
 .accordion-button {
 	border-radius: 15px;
-	border: 2px solid white;
+	border: 2px solid gray;
 	transition: all 0.3s ease;
 	background-color: #000000;
 }
 
 .accordion-button:hover {
-	border-color: var(--blue);
+	border: 2px solid gray;
 }
 
 .accordion-button:not(.collapsed) {
