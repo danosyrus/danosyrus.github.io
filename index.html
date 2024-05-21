@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <meta name="description" content="Welcome to Dano Syrus's personal website, where you can find more about me.">
     <meta name="keywords" content="Dano Syrus, tech enthusiast, website, technology">
@@ -24,43 +24,56 @@
 </head>
 
 <body class="preload overflow-hidden">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand px-2" href="#">
                 <img src="src/assets/favicon2.jpg" style="height:35px;width:35px" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="offcanvas" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 active" href="index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="contact">Contact</a>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <a class="offcanvas-title px-2" href="#">
+                        <img src="src/assets/favicon2.jpg" style="height:35px;width:35px" alt="Logo">
+                    </a>
+                    <h5 class="offcanvas-title bg-transparent" id="offcanvasLabel">Dano Syrus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" href="index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center">
-        <div class="text-center">
-            <h1 class="display-2 fw-bold">Dano <span class="text-primary">Syrus</span></h1>
-            <h2 id="bio" class="fw-bold">Tech Enthusiast</h2>
-            <div>
-                <a id="instagram" href="#" target="_blank" class="btn btn-lg"><i class="bi bi-instagram"></i></a>
-                <a id="github" href="#" target="_blank" class="btn btn-lg"><i class="bi bi-github"></i></a>
-                <a id="mail" href="#" class="btn btn-lg"><i class="bi bi-envelope-fill"></i></a>
+    <div class="wave-container">
+        <div class="container">
+            <div class="row align-items-center text-center min-vh-100">
+                <div class="col-md-12">
+                    <h1 class="display-3 fw-bold">Dano Syrus</h1>
+                    <h3 id="bio" class="fw-normal text-muted mb-3">Tech Enthusiast</h3>
+                    <div class="d-flex gap-3 justify-content-center lead fw-normal">
+                        <a id="instagram" href="#" target="_blank" class="btn btn-lg"><i
+                                class="bi bi-instagram"></i></a>
+                        <a id="github" href="#" target="_blank" class="btn btn-lg"><i class="bi bi-github"></i></a>
+                        <a id="mail" href="#" class="btn btn-lg"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="src/scripts/index.js" defer></script>
 </body>
