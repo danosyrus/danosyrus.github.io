@@ -1,8 +1,9 @@
 const texts = [
-  "Full Stack Developer",
-  "Web Designer",
-  "Programmer",
-  "Tech Enthusiast"
+  "full-stack developer",
+  "web developer",
+  "web designer",
+  "programmer",
+  "tech enthusiast"
 ];
 
 let index = 0;
