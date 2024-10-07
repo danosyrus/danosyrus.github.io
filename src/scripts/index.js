@@ -1,26 +1,3 @@
-const texts = [
-  "full-stack developer",
-  "web developer",
-  "web designer",
-  "programmer",
-  "tech enthusiast"
-];
-
-let index = 0;
-const textElement = document.getElementById("bio");
-
-function changeText() {
-  textElement.classList.remove("show");
-  setTimeout(() => {
-    textElement.textContent = texts[index];
-    index = (index + 1) % texts.length;
-    textElement.classList.add("show");
-  }, 500);
-}
-
-changeText();
-setInterval(changeText, 3000);
-
 fetch("src/config/config.json")
   .then(res => res.json())
   .then(data => {
