@@ -10,6 +10,8 @@ window.addEventListener('load', () => {
 
 });
 
+
+
 const glow = document.getElementById('cursorGlow');
 
 window.addEventListener('mousemove', (e) => {
@@ -35,9 +37,12 @@ new Typed('#typing', {
 
   strings: [
     'Developer',
-    'Designer',
+    'UI/UX Designer',
+    'Student',
     'Creative Builder',
-    'Frontend Engineer'
+    'Freelancer',
+    'Martial Artist',
+    "Gamer/Esports"
   ],
 
   typeSpeed: 70,
@@ -86,69 +91,7 @@ themeToggle.addEventListener('click', () => {
 
 });
 
-function updateClock() {
 
-  const now = new Date();
-
-  const time = now.toLocaleTimeString();
-
-  document.getElementById('liveClock').innerHTML = time;
-
-}
-
-setInterval(updateClock, 1000);
-
-updateClock();
-
-let seconds = 0;
-
-function updateTimeSpent() {
-
-  seconds++;
-
-  let hrs = Math.floor(seconds / 3600);
-  let mins = Math.floor((seconds % 3600) / 60);
-  let secs = seconds % 60;
-
-  let display = '';
-
-  if (hrs > 0) {
-    display += hrs + 'h ';
-  }
-
-  if (mins > 0 || hrs > 0) {
-    display += mins + 'm ';
-  }
-
-  display += secs + 's';
-
-  document.getElementById('timeSpent').innerHTML = display;
-
-}
-
-setInterval(updateTimeSpent, 1000);
-
-ScrollReveal().reveal('.hero-text', {
-  distance: '60px',
-  duration: 1200,
-  origin: 'left',
-  opacity: 0
-});
-
-ScrollReveal().reveal('.hero-card', {
-  distance: '60px',
-  duration: 1200,
-  origin: 'right',
-  opacity: 0
-});
-
-ScrollReveal().reveal('.skill-card,.project-card,.stat-card,.contact-box', {
-  interval: 200,
-  distance: '40px',
-  duration: 1000,
-  origin: 'bottom',
-  opacity: 0
-});
 
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
@@ -178,3 +121,109 @@ window.addEventListener('scroll', () => {
   });
 
 });
+
+
+const customizeBtn =
+  document.getElementById("customizeBtn");
+
+const customizerPanel =
+  document.getElementById("customizerPanel");
+
+const closeCustomizer =
+  document.getElementById("closeCustomizer");
+
+const accentPicker =
+  document.getElementById("accentPicker");
+
+const bgPicker =
+  document.getElementById("bgPicker");
+
+const textPicker =
+  document.getElementById("textPicker");
+
+const cardPicker =
+  document.getElementById("cardPicker");
+
+customizeBtn.addEventListener("click", () => {
+
+  customizerPanel.classList.add("active");
+
+});
+
+closeCustomizer.addEventListener("click", () => {
+
+  customizerPanel.classList.remove("active");
+
+});
+
+accentPicker.addEventListener("input", (e) => {
+
+  document.documentElement
+    .style
+    .setProperty("--accent", e.target.value);
+
+});
+
+bgPicker.addEventListener("input", (e) => {
+
+  document.body.style.background =
+    e.target.value;
+
+});
+
+textPicker.addEventListener("input", (e) => {
+
+  document.body.style.color =
+    e.target.value;
+
+});
+
+cardPicker.addEventListener("input", (e) => {
+
+  document.querySelectorAll(
+    ".hero-card, .skill-card, .project-card, .info-card, .stat-card, .contact-box"
+  ).forEach(card => {
+
+    card.style.background =
+      e.target.value;
+
+  });
+
+});
+
+const notifyBox =
+  document.getElementById("notifyBox");
+
+const randomMessages = [
+
+  "Hi 👋",
+  "How are you?",
+  "Game okke kalik machuu",
+  "Hope you're having a great day 🚀",
+  "Play the mini game 🎮",
+  "Game okke kalik machuu",
+  "Stay strong 💪"
+
+];
+
+function showNotification() {
+
+  const randomText = randomMessages[
+    Math.floor(Math.random() * randomMessages.length)
+  ];
+
+  notifyBox.innerText = randomText;
+
+  notifyBox.classList.add("show");
+
+  setTimeout(() => {
+
+    notifyBox.classList.remove("show");
+
+  }, 5000);
+
+}
+
+setInterval(showNotification, 7000);
+
+showNotification();
