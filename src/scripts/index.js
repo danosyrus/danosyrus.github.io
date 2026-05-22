@@ -147,12 +147,14 @@ const cardPicker =
 customizeBtn.addEventListener("click", () => {
 
   customizerPanel.classList.add("active");
+  document.body.style.overflow = "hidden";
 
 });
 
 closeCustomizer.addEventListener("click", () => {
 
   customizerPanel.classList.remove("active");
+  document.body.style.overflow = "auto";
 
 });
 
@@ -175,6 +177,35 @@ textPicker.addEventListener("input", (e) => {
 
   document.body.style.color =
     e.target.value;
+
+});
+
+document.addEventListener("click", (e) => {
+
+    const clickedInside =
+        customizerPanel.contains(e.target) ||
+        customizeBtn.contains(e.target);
+
+    if (!clickedInside &&
+        customizerPanel.classList.contains("active")) {
+
+        customizerPanel.classList.remove("active");
+
+        document.body.style.overflow = "auto";
+
+    }
+
+});
+
+document.addEventListener("keydown", (e) => {
+
+    if (e.key === "Escape") {
+
+        customizerPanel.classList.remove("active");
+
+        document.body.style.overflow = "auto";
+
+    }
 
 });
 
