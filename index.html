@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dano Syrus | Premium Portfolio</title>
+    <title>Dano Syrus | Portfolio</title>
 
-    <meta name="description" content="Premium futuristic portfolio website of Dano Syrus">
+    <meta name="description" content="Website of Dano Syrus">
 
     <link rel="icon" href="src/assets/favicon.jpg">
 
@@ -17,7 +16,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -38,9 +37,9 @@
     <div class="cursor-glow" id="cursorGlow"></div>
 
     <div class="social-dock">
-        <a href="#"><i class="bi bi-github"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ"><i class="bi bi-github"></i></a>
+        <a href="https://instagram.com/danosyrus"><i class="bi bi-instagram"></i></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ"><i class="bi bi-linkedin"></i></a>
     </div>
 
     <header>
@@ -53,9 +52,9 @@
                 <nav id="mobileNav">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
+                    <a href="game.html">Game</a>
                 </nav>
 
                 <button class="mobile-menu-btn" id="menuBtn">
@@ -66,9 +65,16 @@
                     <i class="bi bi-moon-stars-fill"></i>
                 </button>
 
+                <button class="customize-btn" id="customizeBtn">
+                    <i class="bi bi-sliders"></i>
+                </button>
+
+
+
             </div>
         </div>
     </header>
+
 
     <section class="hero container-custom" id="home">
         <div class="hero-grid">
@@ -94,36 +100,28 @@
                 <div class="hero-buttons">
                     <a href="#contact" class="btn-custom btn-primary-custom">Contact Me</a>
                     <a href="#projects" class="btn-custom btn-outline-custom">View Projects</a>
-                </div>
-
-                <div class="live-info">
-
-                    <div class="info-card">
-                        <i class="bi bi-clock-fill"></i>
-                        <div>
-                            <span>Local Time</span>
-                            <h3 id="liveClock">00:00:00</h3>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="bi bi-hourglass-split"></i>
-                        <div>
-                            <span>Time On Website</span>
-                            <h3 id="timeSpent">0s</h3>
-                        </div>
-                    </div>
-
+                    <a href="game.html" class="btn-custom btn-outline-custom ">Play Game 🎮</a>
                 </div>
 
             </div>
 
             <div class="hero-card">
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop"
-                    alt="developer">
+                <img src="src/assets/profile.jpg" alt="developer">
                 <h3>About Me</h3>
-                <p>
-                    Passionate about coding, modern UI design and building futuristic premium interfaces.
+                &nbsp;
+                <p class="fs-1 lh-lg text-light px-1"
+                    style="font-family: 'Montserrat', sans-serif !important; font-weight: 500; letter-spacing: 0.3px; line-height: 1.7;">
+
+                    Passionate developer focused on coding, modern UI design, and building futuristic premium digital
+                    experiences.
+                    Skilled in both frontend and backend development with a strong eye for clean, immersive interfaces.
+
+                    <br><br>
+
+                    Alongside tech, I actively train in fitness, MMA, and military-style endurance training. I’m also an
+                    English
+                    degree student, martial artist, and proud holder of the India Book of Records and Asia Book of
+                    Records.
                 </p>
             </div>
 
@@ -210,7 +208,10 @@
                     <img
                         src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop">
                     <h3>Personal Portfolios</h3>
-                    <p>Futuristic responsive portfolio with basic cinematic animations.</p>
+                    <br>
+                    <p>Custom-built futuristic responsive portfolio featuring sleek animations, modern aesthetics, and
+                        smooth interactive experiences.</p>
+
                     <div class="tech-stack">
                         <span>HTML</span>
                         <span>CSS</span>
@@ -221,8 +222,10 @@
                 <div class="project-card">
                     <img
                         src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop">
-                    <h3>Business Website</h3>
-                    <p>Business website focused on branding and aesthetics.</p>
+                    <h3>Business Websites</h3>
+                    <br>
+                    <p>Modern business website focused on branding, marketing, and premium aesthetic design for a strong
+                        digital presence.</p>
                     <div class="tech-stack">
                         <span>Responsive</span>
                         <span>UI/UX</span>
@@ -257,12 +260,46 @@
     </section>
 
     <footer>
-        © 2026 Dano Syrus • Made with love
+        © 2026 Dano Syrus • Glad you made it here, thanks ❤️
     </footer>
 
+    <div class="customizer-panel" id="customizerPanel">
+        <div class="customizer-header">
+            <h3>Customize UI</h3>
+            <button id="closeCustomizer">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+
+        <div class="customizer-group">
+            <label>Accent Color</label>
+            <input type="color" id="accentPicker" value="#4f8cff">
+        </div>
+
+        <div class="customizer-group">
+            <label>Background Color</label>
+            <input type="color" id="bgPicker" value="#050505">
+        </div>
+
+        <div class="customizer-group">
+            <label>Text Color</label>
+            <input type="color" id="textPicker" value="#ffffff">
+        </div>
+
+        <div class="customizer-group">
+            <label>Cards Color</label>
+            <input type="color" id="cardPicker" value="#111111">
+        </div>
+    </div>
+
+    <div class="notify-box" id="notifyBox">
+        Hello 👋
+    </div>
+
     <script src="src/scripts/index.js"> </script>
+
+
 
 </body>
 
 </html>
-```
